@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Flask machine learning endpoint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div>
+    <h1>Machine learning solution for getaround 🚗 🚙 🛻 🚐</h1>
+    <h2>👉 Here we help you calculate the best rental price per day for your car</h2>
+    <p>In order to predict the best rental price per day for your car, we need a .json input format with the following information for your car:
+      <ul>
+        <li> model_key</li>
+        <li> mileage</li>
+        <li> engine_power</li>
+        <li> fuel</li>
+        <li> paint_color</li>
+          <li>  car_type</li>
+            <li>  private_parking_available</li>
+              <li>  has_gps</li>
+                <li>  has_air_conditioning</li>
+                  <li>automatic_car</li>
+                    <li>has_getaround_connect</li>
+                      <li>has_speed_regulator</li>
+                        <li>winter_tires</li>
+      </ul>
+ 
+    </p>
+    <p> Send your request to the following url:</p>
+    <p><a href="https://getaroundprice-app-amv.herokuapp.com/predict">https://getaroundprice-app-amv.herokuapp.com/predict</a></p>
+    <p>Here is an example of the input we expect:</p>
+    <div>input_simple = {
+      "input": ["Citroën", 140411, 100, "diesel", "black", "convertible", True, True, False, False, True, True, True]}</div>
+    <div>res = requests.post(url, json=input_multiple)</div>
+    <div>print(res.json())</div>
+    
+  </div>
+</body>
+
+</html>
